@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;      /*le quita las lineas debajo del texto*/
+    cursor: pointer;            /*agrega la manita cuando pasas el cursor*/
+}
+header{
+    width: 100%;
+    height: 60px;
+}
+header nav{
+    display: flex;              /* coloca  a todos los elementos de manera horizontal */
+    justify-content: flex-end;
+}
+
+.nav-right-section{             /*tambien se puede poner hader nav .nav-right-section*/
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;           /*le quita los puntos de una lista*/
+    justify-content: center;    /* posiciona de manera horizontal al centro */
+    align-items: center;        /* posiciona de manera vertical al centro */                       
+}
+.nav-right-section a{
+    margin-right: 10px;
+    color: #000000;
+}
+
+.menu-icon{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png'); /* Pones una imagen de fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+.nav-right-section img{
+    border-radius: 50%;
+    margin-left: 15px;
+}
+main{
+    text-align: center;
+}
+.main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+}
+.main-logo img{
+    width: 272px;
+    height: 92px;
+}
+.main-input{
+    width: 580px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.main-input-container{
+    width: 580px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-input input{
+    width: 500px;
+    height: 40px;
+    border: none;               /* elimina el borde */
+    outline: none;              /* elimina la linea que aparece al hacer click */
+    padding: 0 10px 0 10px;
+}
+.main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+.search-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+.micro-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;                /* se pone la mani al pasar sobre el */
+}
+.main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+.main-buttons div{
+    display: inline-block;          /* alinia los dos bloques de div en el mismo bloque */
+}
+.main-buttons button{
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 1px solid rgba(255, 255, 255, 0);
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+.main-buttons button:hover{
+    border: 1px solid #dadce0;
+    color: #202124;
+    cursor: pointer;
+}
+
+footer{
+    height: 48px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;                      /* esto hace que el footer siempre este abajo */
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; /* esto hace que se dividan en dos columnas */
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+footer ul{
+    margin: 10px 25px 10px 25px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+.footer-left{
+    justify-self: left;
+}
+.footer-right{
+    justify-self: right;
+}
+footer ul li a{
+    padding: 10px;
+    color: #5f6368;
+}
+a:hover{
+    text-decoration: underline;
+}
